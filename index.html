@@ -1,102 +1,164 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiAutomateUK - Under Maintenance</title>
+    <title>AI Automate UK - AI-Driven Innovations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #008751; /* Extracted from your original site's green */
-            --secondary-color: #006042;
-            --background-color: #f5f5f5; /* Light grey */
-            --text-color: #333;
-            --card-background: #fff;
-        }
-
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* A very dark grey, almost black */
         }
-
-        .container {
-            width: 90%;
-            max-width: 600px;
-            padding: 30px;
-            background-color: var(--card-background);
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        .neon-text-blue {
+            text-shadow: 0 0 5px rgba(59, 130, 246, 0.8), 0 0 10px rgba(59, 130, 246, 0.6);
         }
-
-        .logo {
-            margin-bottom: 20px;
+        .neon-text-purple {
+            text-shadow: 0 0 5px rgba(168, 85, 247, 0.8), 0 0 10px rgba(168, 85, 247, 0.6);
         }
-
-        .logo img {
-            max-width: 150px;
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.5), 0 0 20px rgba(59, 130, 246, 0.3);
         }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 2em;
-            margin-bottom: 10px;
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.5);
         }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
+        .service-card {
+            background-color: rgba(17, 24, 39, 0.8);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease;
         }
-
-        .contact-info {
-            margin-top: 30px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
+        .service-card:hover {
+            border-color: rgba(96, 165, 250, 0.8);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
-
-        .contact-info p {
-            margin: 5px 0;
-            font-size: 0.9em;
+        .bg-grid {
+            background-image:
+                linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 2rem 2rem;
         }
-
-        .contact-info a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="logo">
-            <!-- A placeholder for your logo image -->
-            <img src="https://via.placeholder.com/150x50?text=AiAutomateUK" alt="AiAutomateUK Logo">
-        </div>
-        <h1>Undergoing Essential Maintenance</h1>
-        <p>
-            Our website is currently down for important updates and maintenance. We apologize for any inconvenience this may cause and thank you for your patience.
-        </p>
-        <p>
-            We expect to be back online shortly. Please check back again soon.
-        </p>
-        <div class="contact-info">
-            <p>For urgent inquiries, you can still reach us:</p>
-            <p>Email: <a href="mailto:contact@aiautomateuk.engineering">contact@aiautomateuk.engineering</a></p>
-        </div>
+<body class="text-gray-200">
+
+    <!-- Background Decoration -->
+    <div class="absolute top-0 left-0 w-full h-full bg-grid -z-10 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse animation-delay-400"></div>
     </div>
+
+    <!-- Header -->
+    <header class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wider text-white">
+                AI<span class="text-blue-400 neon-text-blue">Automate</span>UK
+            </h1>
+            <a href="#contact" class="hidden md:inline-block bg-gray-800 text-gray-300 border border-gray-700 px-5 py-2 rounded-lg text-sm font-medium hover:bg-gray-700 hover:text-white transition-colors">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-6 text-center mt-20 md:mt-32">
+        <h1 class="text-4xl md:text-6xl font-black text-white leading-tight">
+            Empowering Industries with 
+            <span class="text-blue-400 neon-text-blue">AI-Driven</span> Innovations
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+            Harnessing the power of Digital Twins, Edge AI, and Advanced 6G Connectivity to revolutionize your business operations.
+        </p>
+        <div class="mt-10">
+            <a href="#services" class="cta-button bg-blue-600 text-white font-bold text-lg px-8 py-4 rounded-lg inline-block">
+                Explore Our Services
+            </a>
+        </div>
+    </main>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:text-center">
+                <h2 class="text-base font-semibold leading-7 text-blue-400">Our Expertise</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Everything you need to innovate</p>
+                <p class="mt-6 text-lg leading-8 text-gray-400">
+                    We provide end-to-end solutions, from strategic advice to powerful platforms, driving efficiency and growth.
+                </p>
+            </div>
+            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    
+                    <!-- Service 1: AI & Digital Twins Consultancy -->
+                    <div class="service-card rounded-2xl p-8">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600/20">
+                            <svg class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.375a6.375 6.375 0 100-12.75 6.375 6.375 0 000 12.75zM12 18.375a6.375 6.375 0 00-6.375-6.375M12 18.375v-6.375m0 6.375h6.375m-6.375 0H5.625" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold leading-7 text-white">AI & Digital Twins Consultancy</h3>
+                        <p class="mt-4 text-base leading-7 text-gray-400">Get expert guidance to integrate cutting-edge AI and Digital Twin strategies into your workflow, tailored to your unique industry challenges.</p>
+                         <a href="#" class="mt-6 inline-block bg-blue-600/80 text-white font-semibold px-5 py-2 rounded-lg text-sm hover:bg-blue-600 transition-colors">Book an Appointment</a>
+                    </div>
+                    
+                    <!-- Service 2: Digital Twins Marketplace -->
+                    <div class="service-card rounded-2xl p-8">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-purple-600/20">
+                            <svg class="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5A2.25 2.25 0 0021 18.75V16.5M16.5 21V9.75L12 5.25 7.5 9.75V21" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold leading-7 text-white">Digital Twins Marketplace</h3>
+                        <p class="mt-4 text-base leading-7 text-gray-400">Explore a curated marketplace of pre-built Digital Twin models and components to accelerate your development and deployment.</p>
+                        <a href="#" class="mt-6 inline-block bg-purple-600/80 text-white font-semibold px-5 py-2 rounded-lg text-sm hover:bg-purple-600 transition-colors">Visit Marketplace</a>
+                    </div>
+
+                    <!-- Service 3: Digital Twin Platform -->
+                    <div class="service-card rounded-2xl p-8">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gray-600/20">
+                            <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-.228a4.5 4.5 0 00-.12-1.03l-2.268-9.64a3.375 3.375 0 00-3.285-2.6H8.165A3.375 3.375 0 004.88 6.352l-2.268 9.64a4.5 4.5 0 00-.12 1.03v.228m17.11-4.729a4.502 4.502 0 01-1.03-.12l-9.64-2.268a3.375 3.375 0 00-2.6-3.285V4.88c0-.663.537-1.2 1.2-1.2h2.28a1.2 1.2 0 011.2 1.2v.228m-8.736 10.967a4.5 4.5 0 011.03.12l9.64 2.268a3.375 3.375 0 002.6 3.285v1.23c0 .663-.537 1.2-1.2 1.2h-2.28a1.2 1.2 0 01-1.2-1.2v-.228" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold leading-7 text-white">Digital Twin Platform</h3>
+                        <p class="mt-4 text-base leading-7 text-gray-400">An integrated, powerful platform for building, simulating, and managing complex Digital Twins. Your central hub for digital innovation.</p>
+                        <span class="mt-6 inline-block bg-gray-700 text-gray-400 font-semibold px-5 py-2 rounded-lg text-sm cursor-not-allowed">Available Soon</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section id="contact" class="container mx-auto px-6 py-20 text-center">
+        <div class="max-w-4xl mx-auto bg-gray-900/50 border border-blue-500/20 rounded-2xl p-10 backdrop-blur-sm">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+                Ready to Build the Future?
+            </h2>
+            <p class="mt-4 text-lg text-gray-400">
+                Let's discuss how our AI-driven solutions can transform your business.
+            </p>
+            <div class="mt-8">
+                <a href="#" class="cta-button bg-blue-600 text-white font-bold text-lg px-8 py-4 rounded-lg inline-block">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-6 py-8 mt-10 border-t border-gray-800/50">
+        <div class="text-center text-gray-500">
+            <p>&copy; 2024 AI Automate UK. All rights reserved.</p>
+            <p class="text-sm mt-2">A conceptual landing page based on aiautomateuk.engineering</p>
+        </div>
+    </footer>
+
 </body>
 </html>
