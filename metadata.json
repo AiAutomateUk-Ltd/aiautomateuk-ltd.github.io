@@ -1,0 +1,8 @@
+{
+  "name": "AiAutomateUK - Advanced Industrial Intelligence",
+  "description": "A cutting-edge industrial automation portal featuring Digital Twin simulations, AI predictive maintenance, IoT lifecycle management, and custom automation solution configuration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
